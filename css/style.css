@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+body {
+    background-color: #14213D;
+}
+/* Cabeçalho*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    display: block;
+    margin: 0 80px;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    transition: 1s;   
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+}
+
+.logo:hover {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+/* Foto de fundo */
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/fundo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Apresentação, de quem eu sou */
+.container-banner {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.apresentacao {
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#ola, #nome, #job {
+    color: white;
+    padding: 20px;
+    text-shadow: 1px 1px black;
+}
+
+#ola {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+#nome {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+    text-shadow: 2px 2px black;
+}
+
+#job {
+    font-size: 30px;
+    font-family: 'Rajdhani', sans-serif;
+    text-shadow: 1px 1px black;
+}
+
+/* Sobre mim */
+
+#sobreMim {
+    background-color: #14213D;
+    color: white;
+    height: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.containerSobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#sobre {
+    padding: 40px;
+    display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Descrição Profissional */
+
+#inicDescricao {
+    text-align: center;
+   
+}
+
+.descricao {
+    display: flex;
+    width: 800px;
+    align-items: center;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+
+/* ÁREA de contato */
+#contato {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+    background-color: #14213D;
+    
+}
+
+.containerContato {
+    
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#redes {
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#redes a {
+    margin: 30px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Os ícones*/
+
+.fa-whatsapp {
+    
+    
+    color: white;
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 5px;
+    padding: 10px;    
+    transition: 1s;   
+}
+
+.fa-whatsapp:hover {
+    color: green;
+    background-color: white;
+    transition: 1s;
+}
+
+.fa-github {
+   
+    color: black;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;   
+    transition: 1s;   
+}
+
+.fa-github:hover {
+    color: white;
+    background-color: black;
+    transition: 1s;   
+}
+
+.fa-linkedin {
+    
+    color: #1166c2;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;   
+    transition: 1s;   
+}
+.fa-linkedin:hover {
+    background-color: #1166c2;
+    color: white;
+    transition: 1s;  
+}
+
+/* Formulário */
+form {
+    height: 500px;
+    background-color: #14213D;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#contato-email {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.campo {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);    
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white;
+}
+
+input {
+    width: 300px;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+input::placeholder, textarea::placeholder {
+    color: #14213D;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+button {
+    border-style: none;
+}
+
+.botao a {
+    text-decoration: none;
+    background-color: #14213D;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);    
+    transition: 1s;   
+}
+
+.botao a:hover {
+    
+    background-color: #1d366b;
+    border: 1px solid white;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+/* Botão voltar ao início */
+.voltar {
+    
+    display: flex;
+    align-self: flex-end;   
+    color: white;
+    text-decoration: none;
+    border: 1px solid #14213D;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.voltar:hover {
+    border: 1px solid white;
+    transition: 1s;
+}
+
+/* Rodapé */
+
+footer {
+    height: 60px;
+    background-color: rgb(250, 249, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE*/
+@media screen and (max-width: 810px) {
+   
+    /* Responsividade */
+
+
+    #sobreMim {
+        height: 1200px;
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicDescricao {
+        flex-wrap: wrap;
+        width: 200px;
+
+    }
+
+
+    .descricao {
+        display: flex;
+        width: 400px;
+        flex-direction: column;
+        
+        flex-wrap: wrap;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .voltar {
+        display: block;
+        color: white;
+        text-decoration: none;
+        border: 1px solid #14213D;
+        margin-right: 20px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+        transition: 1s;
+
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

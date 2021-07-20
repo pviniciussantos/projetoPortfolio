@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="img/home.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Mina & display = swap "rel =" stylesheet ">
+</head>
+<body>
+    <header class="header">
+        <a class="logo"  href="index.html"> <img src="img/logo.png" alt=""></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobreMim">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+   <!-- Foto de fundo -->
+   <section id="banner">
+        <div class="container-banner">
+               <!-- Apresentação -->
+            <div class="apresentacao">
+                <p id="ola">Olá, sou</p>
+                <h1 id="nome">Paulo Vinicius</h1>
+                <h2 id="job">Desenvolvedor Web</h2>
+            </div>
+        </div>
+   </section>
+      <!-- Sobre mim -->
+   <section id="sobreMim">
+       <div class="containerSobre">
+           <h2 id="sobre">Sobre mim:</h2>
+            <p id="inicDescricao">   
+                Nesse site irei fazer uma breve apresentação sobre mim.
+            </p>
+               <!-- Descrição -->
+            <p class="descricao">   
+                Sou um carioca, casado, pai de 3 lindos filhos, com 45 anos.
+            Formado em Análise e Desenvolvimento de Sistemas, venho buscando meu espaço no mercado de trabalho.
+            </p>
+            <p class="descricao">   
+            Tenho buscado bastante conteúdo em HTML, CSS, JavaScript e colocar em prática todo o aprendizado adquirido.
+            Venho buscando a minha primeira vaga em Desenvolvimento Web, mesmo não tendo experiência na área, tenho muito vontade de aprender.
+            </p>
+            <p class="descricao">   
+            Sou um profissional detalhista, proativo e aberto a ouvir críticas para melhorar meu desempenho profissional.
+            Por saber ouvir muito e se apegar aos pequenos detalhes, acabo utilizando as melhores maneiras de realizar as tarefas.
+            </p>
+            <p class="descricao">   
+                Coloquei aqui alguns conceitos da linguagem de marcação HTML, da estilização do CSS e de responsividade, além links (internos e externos), 
+                estilização de pseudoclasse hover, placeholder.
+            </p>
+       </div>
+   </section>
+      <!-- Contato -->
+   <section id="contato">
+       <div class="containerContato">
+           <h2>Onde me encontrar:</h2>
+       </div>
+          <!-- Redes -->
+       <div id="redes">
+        <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5521986317838" target="_blank"> <i class="fab fa-whatsapp"> Whatsapp</i></a>
+        <a class="github-link" href="https://github.com/pviniciussantos" target="_blank"><i class="fab fa-github"> GitHub</i></a>
+        <a class="linkedin-link" href="https://www.linkedin.com/in/paulo-vinicius-0b699283/" target="_blank"><i class="fab fa-linkedin"> Linkedin</i></a>
+    </div>
+   </section>
+      <!-- Formulário de contato -->
+   <form action="mailto:pviniciussantos@yahoo.com.br" method="POST">
+    <div class="campo">
+        <h2 id="contato-email" >Enviar email para contato:</h2>   
+        <label for="name">Nome</label>
+        <input type="text" id="name" placeholder="Digite seu nome">
+    </div>
+    <div class="campo">
+        <label for="mail">Email</label>
+        <input type="email" id="mail" placeholder="Digite seu email">
+    </div>
+    <div class="campo">
+        <label for="msg">Mensagem</label>
+        
+        <textarea name="msg" id="" placeholder="Digite aqui um comentário..."></textarea>
+    </div>
+    <br>
+    <div class="botao">
+        <button type="submit" value="Enviar"> <a class="botao-email" href="mailto:pviniciussantos@yahoo.com.br"> Enviar email</a></button>
+    </div>
+     <!-- Botão Voltar ao início -->
+     <a class="voltar" href="index.html"><i class="fas fa-reply-all"> Voltar ao início</i></a>
+    </form>
+    <!-- Rodapé -->
+    <footer>
+        <di class="rodape">
+        <p class="foot">&copy; Feito por Paulo Vinicius 2021</p>
+        </di>
+    </footer>
+</body>
+</html>
